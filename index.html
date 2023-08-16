@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+
+    <link rel="icon" href="favicon/favicon.svg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        main{
+            background-color: #f1f1f1;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="container-fluid p-3">
+            <div class="row">
+                <div class="col-md col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="d-block bg-black text-white ps-2" for="html-code">
+                                <i class="fa-brands fa-html5" style="color: #E14C1B;"></i> HTML
+                            </label>
+                            <textarea name="" id="html-code" onkeyup="onRun()" class="w-100 border-black" rows="10"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <label class="d-block bg-black text-white ps-2"  for="css-code">
+                                <i class="fa-brands fa-css3" style="color: #0F6EB0;"></i> CSS
+                            </label>
+                            <textarea name="" id="css-code" onkeyup="onRun()" class="w-100 border-black" rows="10"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <label class="d-block bg-black text-white ps-2" for="js-code">
+                                <i class="fa-brands fa-square-js" style="color: #E8D44D;"></i> JS
+                            </label>
+                            <textarea name="" id="js-code" onkeyup="onRun()" class="w-100 border-black" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-12">
+                    <label class="d-block bg-black text-white ps-2" for="output-code">
+                        <i class="fa-solid fa-play" style="color: #ffff;"></i> Output
+                    </label>
+                    <iframe id="output-code" class="w-100 bg-white border border-black h-100"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
